@@ -4,6 +4,8 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import ChatRoom from './components/ChatRoom';
 import AuthProvider from './Context/AuthProvider';
 import AppProvider from './Context/AppProvider';
+import AddRoomModal from './components/Modals/AddRoomModal';
+import InviteMemberModal from './components/Modals/InviteMemberModal';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
             <Route component={Login} path='/login' />
             <Route component={ChatRoom} path='/' />
           </Switch>
+          <AddRoomModal />
       </AppProvider>
       </AuthProvider>
     </BrowserRouter>
