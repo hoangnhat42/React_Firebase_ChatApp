@@ -1,7 +1,6 @@
 import React from 'react'
 import { Row, Col, Button, Typography } from 'antd';
 import firebase, { auth } from '../../firebase/config';
-import { useHistory } from 'react-router-dom';
 
 const { Title } = Typography;
 
@@ -13,7 +12,7 @@ export default function Login() {
     auth.signInWithPopup(fbProvider)
   };
 
-  
+
   return (
     <div>
       <Row justify='center' style={{ height: 800 }}>
