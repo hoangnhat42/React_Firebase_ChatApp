@@ -8,19 +8,12 @@ const { Title } = Typography;
 const fbProvider = new firebase.auth.FacebookAuthProvider();
 
 export default function Login() {
-  const history = useHistory();
 
   const handleFbLogin = () => {
     auth.signInWithPopup(fbProvider)
   };
 
-  auth.onAuthStateChanged(user => {
-    console.log( {user});
-    if (user) {
-      history.push('/');
-    }
-  });
-
+  
   return (
     <div>
       <Row justify='center' style={{ height: 800 }}>
