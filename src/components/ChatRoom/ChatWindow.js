@@ -3,9 +3,9 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Button, Tooltip, Avatar, Form, Input, Alert } from 'antd';
 import Message from './Message';
-import { AppContext } from '../Context/AppProvider';
+import { AppContext } from '../../Context/AppProvider';
 import { addDocument } from '../../firebase/services';
-import { AuthContext } from '../Context/AuthProvider';
+import { AuthContext } from '../../Context/AuthProvider';
 import useFirestore from '../../hooks/useFirestore';
 
 const HeaderStyled = styled.div`

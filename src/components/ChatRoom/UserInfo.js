@@ -3,8 +3,9 @@ import { Button, Avatar, Typography } from 'antd';
 import styled from 'styled-components';
 
 import { auth } from '../../firebase/config';
-import { AuthContext } from '../Context/AuthProvider';
-import { AppContext } from '../Context/AppProvider';
+import { AuthContext } from '../../Context/AuthProvider';
+import { AppContext } from '../../Context/AppProvider';
+
 
 const WrapperStyled = styled.div`
   display: flex;
