@@ -17,6 +17,7 @@ function App() {
             <Route component={ChatRoom} path='/' />
           </Switch>
           <AddRoomModal />
+          <InviteMemberModal />
       </AppProvider>
       </AuthProvider>
     </BrowserRouter>
