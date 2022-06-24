@@ -19,10 +19,10 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
-//cau hinh cho local chay voi firebase emulators
+//cau hinh cho local chay voi firebase emulators      
 if (window.location.hostname === 'localhost') {
-   auth.useEmulator('http://localhost:9099');
-   db.useEmulator('localhost', '8080');
+  // auth.useEmulator('http://localhost:9099');
+  // db.useEmulator('localhost', '8080');
 }
 
 export { db, auth };
