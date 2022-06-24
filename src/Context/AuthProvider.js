@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import { auth } from '../firebase/config';
 import { Spin } from 'antd';
 
-
 export const AuthContext = React.createContext();
 
 export default function AuthProvider({ children }) {

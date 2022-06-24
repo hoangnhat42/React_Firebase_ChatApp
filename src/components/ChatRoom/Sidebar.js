@@ -15,10 +15,10 @@ export default function Sidebar() {
     <SidebarStyled>
       <Row>
         <Col span={24}>
-        <UserInfo />
+          <UserInfo />
         </Col>
         <Col span={24}>
-        <RoomList />
+          <RoomList />
         </Col>
       </Row>
     </SidebarStyled>

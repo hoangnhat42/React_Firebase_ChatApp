@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Row, Col, Button, Typography } from 'antd';
 import firebase, { auth } from '../../firebase/config';
 import { addDocument, generateKeywords } from '../../firebase/services';
@@ -6,10 +6,10 @@ import { addDocument, generateKeywords } from '../../firebase/services';
 const { Title } = Typography;
 
 const fbProvider = new firebase.auth.FacebookAuthProvider();
+const googleProvider = new firebase.auth.GoogleAuthProvider();
 
 export default function Login() {
-
-  const handleFbLogin = async (provider) => {
+  const handleLogin = async (provider) => {
     const { additionalUserInfo, user } = await auth.signInWithPopup(provider);
 
     if (additionalUserInfo?.isNewUser) {
@@ -24,7 +24,6 @@ export default function Login() {
     }
   };
 
-
   return (
     <div>
       <Row justify='center' style={{ height: 800 }}>
@@ -34,12 +33,13 @@ export default function Login() {
           </Title>
           <Button
             style={{ width: '100%', marginBottom: 5 }}
+            onClick={() => handleLogin(googleProvider)}
           >
             Đăng nhập bằng Google
           </Button>
           <Button
             style={{ width: '100%' }}
-            onClick={() => handleFbLogin(fbProvider)}
+            onClick={() => handleLogin(fbProvider)}
           >
             Đăng nhập bằng Facebook
           </Button>
