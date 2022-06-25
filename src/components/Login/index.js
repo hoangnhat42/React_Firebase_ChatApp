@@ -2,7 +2,13 @@ import React from 'react';
 import { Row, Col, Button, Typography } from 'antd';
 import firebase, { auth } from '../../firebase/config';
 import { addDocument, generateKeywords } from '../../firebase/services';
-
+import styled from 'styled-components';
+import btnstyle from './btn.module.css'
+const LoginStyled = styled.div`
+  background-color: #0068A6;
+  color: white;
+  height: 100vh;
+`;
 const { Title } = Typography;
 
 const fbProvider = new firebase.auth.FacebookAuthProvider();
@@ -26,25 +32,28 @@ export default function Login() {
 
   return (
     <div>
+      <LoginStyled>
       <Row justify='center' style={{ height: 800 }}>
         <Col span={8}>
-          <Title style={{ textAlign: 'center' }} level={3}>
+          <Title style={{ textAlign: 'center', fontSize: '50px', color: 'white' }} level={3}>
             Chat App
           </Title>
-          <Button
-            style={{ width: '100%', marginBottom: 5 }}
+          <Button className={btnstyle.loginBtn+ ' ' + btnstyle.loginBtngoogle }
+            style={{ width: '100%' , fontSize: '18px' }}
+
             onClick={() => handleLogin(googleProvider)}
           >
             Đăng nhập bằng Google
           </Button>
-          <Button
-            style={{ width: '100%' }}
+          <Button className={btnstyle.loginBtn+ ' ' + btnstyle.loginBtnfacebook}
+            style={{ width: '100%' , fontSize: '18px' }}
             onClick={() => handleLogin(fbProvider)}
           >
             Đăng nhập bằng Facebook
           </Button>
         </Col>
       </Row>
+      </LoginStyled>
     </div>
   );
 }
