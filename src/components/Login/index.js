@@ -41,14 +41,14 @@ export default function Login() {
           <Title style={{ textAlign: 'center', fontSize: '50px', color: 'white' }} level={3}>
             Chat App
           </Title>
-          <Button className={btnstyle.loginBtn+ ' ' + btnstyle.loginBtngoogle }
+          <Button className={btnstyle.loginBtn+ ' ' + btnstyle.loginBtngoogle + ' ant-btn-custom'  }
             style={{ width: '100%' , fontSize: '18px' }}
 
             onClick={() => handleLogin(googleProvider)}
           >
             Đăng nhập bằng Google
           </Button>
-          <Button className={btnstyle.loginBtn+ ' ' + btnstyle.loginBtnfacebook}
+          <Button className={btnstyle.loginBtn+ ' ' + btnstyle.loginBtnfacebook + ' ant-btn-custom'}
             style={{ width: '100%' , fontSize: '18px' }}
             onClick={() => handleLogin(fbProvider)}
           >

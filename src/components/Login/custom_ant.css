@@ -1,4 +1,4 @@
-.ant-btn::before {
+.ant-btn-custom::before {
 
     display: inline !important;
     opacity: 1 !important;
