@@ -1,9 +1,12 @@
 import React from 'react';
+
 import { Row, Col, Button, Typography } from 'antd';
 import firebase, { auth } from '../../firebase/config';
 import { addDocument, generateKeywords } from '../../firebase/services';
 import styled from 'styled-components';
 import btnstyle from './btn.module.css'
+import './custom_ant.css'
+
 const LoginStyled = styled.div`
   background-color: #0068A6;
   color: white;

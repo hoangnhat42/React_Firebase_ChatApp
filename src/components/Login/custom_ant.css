@@ -1,0 +1,5 @@
+.ant-btn::before {
+
+    display: inline !important;
+    opacity: 1 !important;
+  }

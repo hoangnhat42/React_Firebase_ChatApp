@@ -62,7 +62,3 @@
   .loginBtngoogle:focus {
     background: #E74B37;
   }
-
-  .test.ant-btn::before {
-    display: inline!important;
-  }
