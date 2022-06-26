@@ -13,9 +13,9 @@
 - Firebase: Authentication, Firestore
 
 ## Tài liệu liên quan
-Firebase: https://firebase.google.com/docs
-Ant Design: https://ant.design/docs/react/introduce
-Styled Component: https://styled-components.com/docs
+- Firebase: https://firebase.google.com/docs
+- Ant Design: https://ant.design/docs/react/introduce
+- Styled Component: https://styled-components.com/docs
 
 # Getting Started with Create React App
 
