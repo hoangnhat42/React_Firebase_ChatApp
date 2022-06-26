@@ -1,3 +1,22 @@
+## Tính năng:
+- Đăng nhập bằng Google/Facebook
+- Quản lý các phòng chat
+- Thêm thành viên vào phòng chat
+- Hiển thị danh sách thành viên trong phòng chat
+- Nhắn tin
+
+## Kiến thức: 
+- Context API (Quản lý state)
+- React Hooks
+- Ant Design (UI)
+- Styled Components
+- Firebase: Authentication, Firestore
+
+## Tài liệu liên quan
+Firebase: https://firebase.google.com/docs
+Ant Design: https://ant.design/docs/react/introduce
+Styled Component: https://styled-components.com/docs
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
