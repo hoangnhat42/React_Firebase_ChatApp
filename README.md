@@ -10,12 +10,15 @@
 - React Hooks
 - Ant Design (UI)
 - Styled Components
-- Firebase: Authentication, Firestore
+- Firebase: Authentication, Firestore, Emulators (Dùng để chạy trên local)
 
-## Tài liệu liên quan
+## Tài liệu liên quan:
 - Firebase: https://firebase.google.com/docs
 - Ant Design: https://ant.design/docs/react/introduce
 - Styled Component: https://styled-components.com/docs
+
+## Deploy lên Firebase:
+- https://dzone.com/articles/react-apps-firebase
 
 # Getting Started with Create React App
 
